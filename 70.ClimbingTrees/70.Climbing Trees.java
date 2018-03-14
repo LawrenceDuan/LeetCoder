@@ -40,3 +40,18 @@ public class Solution {
         return dp[n-1];
     }
 }
+
+public class Solution {
+    public int climbStairs(int n) {
+        int[] waysMemo = new int[n];
+        return climb(0, n, waysMemo);
+    }
+
+    public int climb(int i, int n, int[] memo) {
+        if(i == n) return 1;
+        if(i > n) return 0;
+        if(memo[i] > 0) return memo[i];
+        memo[i] = climb(i+1, n, memo) + climb(i+2, n, memo);
+        return memo[i];
+    }
+}
