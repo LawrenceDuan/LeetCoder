@@ -69,7 +69,7 @@ public class Solution {
     }
 }
 
-//Solution 2 Fibonacci Fomular
+//Solution 2 Fibonacci Fomular (nice)
 public class Solution {
     public int climbStairs(int n) {
         double sqrt5=Math.sqrt(5);
